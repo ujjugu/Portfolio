@@ -1,0 +1,160 @@
+*{
+	margin: 0px;
+	overflow-x: hidden;
+	font-family: 'Poppins',sans-serif;
+}
+.head_container{
+	
+}
+.head_container::after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	
+	height: 10px;
+	background: linear-gradient(to bottom,grey,white);
+
+}
+
+.header{
+
+	padding-bottom: 1px;
+	border-bottom: 1px solid black;
+	
+	display: flex;
+}
+.logo{
+	
+	width: 20%;
+	margin-left: 3vw;
+	margin-top: 0.7vw;
+	font-size: 2em;
+	font-weight: 700;
+}
+.tabs{
+
+	width: 60%;
+	display: flex;
+	justify-content: center;
+}
+.links{
+	padding: 10px 20px;
+	
+	margin-left: 10px;
+}
+
+
+.active{
+	color: white;
+background-color: black;
+}
+.active a{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: grey;
+}
+
+
+.links:hover {
+	color: white;
+	background-color: black;
+}
+.links:hover a{
+	color: white;
+	
+}
+.login{
+	display: none;
+	position: absolute;
+	right: 0px;
+	background-color: black;
+	color: white;width: 2vw;
+	margin-top: auto;
+	padding: 10px 10px;
+	margin-right: 5px;
+	text-align: center;
+}
+.link_container{
+	
+	width: 5vw;
+	box-shadow: 0px 0px 4px 4px lightgray;
+	position: absolute;
+	top: -400px;
+	right: 10px;
+	padding: 0.5vw 1vw;
+
+
+}
+.link_tabs{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+
+
+
+@media (max-width:400px){
+	.link_tabs a{
+		color: white;
+		filter: brightness(1.4);
+
+	}
+	.header{
+		height: 20vw;
+	}
+	.logo{
+		display: flex;
+		align-items: center;
+		
+		width: 80%;
+
+				font-size: 20px;
+	}
+	.tabs{
+		display: none;
+	}
+.login{
+	display: block;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.link_container{
+	z-index: 20;
+	width: 30%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: black;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.link_tabs:nth-child(1){
+	padding-bottom: 10px;
+    border-bottom: 0.3px solid black;
+}
+.link_tabs:nth-child(2){
+	padding-bottom: 10px;
+    border-bottom: 0.3px solid black;
+}
+}
+
+
+
+@media (max-width:1000px) and (min-width:400px){
+
+
+	.tabs{
+		width: 60%;
+		margin-right: 10px;
+		justify-content: end;
+	}
+	.logo{
+		width: 40%;
+
+		font-size: 1em;
+	}
+}
+
