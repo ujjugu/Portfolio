@@ -99,7 +99,7 @@ a{
 
 
 
-@media (max-width:400px){
+@media (max-width:500px){
 	.link_tabs a{
 		color: white;
 		filter: brightness(1.4);
@@ -146,7 +146,7 @@ a{
 
 
 
-@media (max-width:1000px) and (min-width:400px){
+@media (max-width:1000px) and (min-width:500px){
 
 
 	.tabs{
